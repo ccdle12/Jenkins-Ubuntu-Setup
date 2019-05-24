@@ -7,3 +7,4 @@ sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.l
 apt update
 apt install jenkins -y
 systemctl status jenkins
+usermod -a -G docker jenkins
